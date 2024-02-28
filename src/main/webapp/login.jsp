@@ -10,15 +10,19 @@
 <html>
 <head>
     <title>login</title>
+    <link rel="stylesheet" href="assets/css/loginStyle.css">
 </head>
 <body>
-<form action="" method="post">
-    <label for="user">Usuario</label>
-    <input id="user" type="text" name="user">
-    <label for="password">Password</label>
-    <input id="password" type="password" name="password">
-    <input type="submit" name="Login">
-</form>
+<div class="login-container">
+    <form class="login-form" action="" method="post">
+        <label for="user">Usuario</label>
+        <input id="user" type="text" name="user">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        <input type="submit" name="Login">
+    </form>
+</div>
+
 <c:if test="${mensaje!=null}">
     <p>${mensaje}</p>
 </c:if>
